@@ -304,7 +304,9 @@ Server.prototype.start = function(done) {
       req.__domain = domain
     }
 
-    res.setHeader('Access-Control-Allow-Origin', '*')
+    if (config.get('cors')) {
+      res.setHeader('Access-Control-Allow-Origin', '*')
+    }
 
     if (req.url === '/api/status') {
       res.setHeader('Cache-Control', 'no-cache')

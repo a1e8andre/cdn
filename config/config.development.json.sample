@@ -85,5 +85,6 @@
       ]
     }
   },
-  "feedback": false
+  "feedback": false,
+  "cors": true
 }

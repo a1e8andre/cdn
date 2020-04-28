@@ -104,5 +104,6 @@
   },
   "experimental": {
     "jsTranspiling": true
-  }
+  },
+  "cors": true
 }
